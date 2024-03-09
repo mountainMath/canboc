@@ -1,9 +1,9 @@
-pandoc: 2.17.1.1
-pkgdown: 2.0.3
+pandoc: 3.1.1
+pkgdown: 2.0.7
 pkgdown_sha: ~
 articles:
   Overview: Overview.html
-last_built: 2022-06-30T06:51Z
+last_built: 2024-03-09T02:05Z
 urls:
   reference: https://mountainmath.github.io/canbank/index.html/reference
   article: https://mountainmath.github.io/canbank/index.html/articles

@@ -8,7 +8,7 @@
 [![R-CMD-check](https://github.com/mountainMath/canbank/workflows/R-CMD-check/badge.svg)](https://github.com/mountainMath/canbank/actions)
 <!-- badges: end -->
 
-<a href="https://mountainmath.github.io/canbank/index.html"><img src="https://mountainmath.github.io/canbank/logo.svg" alt="canbank logo" align="right" width = "25%" height = "25%"/></a>
+<a href="https://mountainmath.github.io/canbank/index.html"><img src="https://mountainmath.github.io/canbank/logo.png" alt="canbank logo" align="right" width = "25%" height = "25%"/></a>
 
 An R package to provide convenient access to the Bank of Canada data
 API.

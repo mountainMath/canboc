@@ -60,52 +60,71 @@
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="fu">get_boc_series</span><span class="op">(</span>
-  <span class="va">series</span>,
-  start_date <span class="op">=</span> <span class="cn">NULL</span>,
-  end_date <span class="op">=</span> <span class="cn">NULL</span>,
-  recent <span class="op">=</span> <span class="cn">NULL</span>,
-  recent_weeks <span class="op">=</span> <span class="cn">NULL</span>,
-  recent_months <span class="op">=</span> <span class="cn">NULL</span>,
-  recent_years <span class="op">=</span> <span class="cn">NULL</span>,
-  quiet <span class="op">=</span> <span class="cn">FALSE</span>,
-  refresh <span class="op">=</span> <span class="cn">FALSE</span>
-<span class="op">)</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">get_boc_series</span><span class="op">(</span></span>
+<span>  <span class="va">series</span>,</span>
+<span>  start_date <span class="op">=</span> <span class="cn">NULL</span>,</span>
+<span>  end_date <span class="op">=</span> <span class="cn">NULL</span>,</span>
+<span>  recent <span class="op">=</span> <span class="cn">NULL</span>,</span>
+<span>  recent_weeks <span class="op">=</span> <span class="cn">NULL</span>,</span>
+<span>  recent_months <span class="op">=</span> <span class="cn">NULL</span>,</span>
+<span>  recent_years <span class="op">=</span> <span class="cn">NULL</span>,</span>
+<span>  quiet <span class="op">=</span> <span class="cn">FALSE</span>,</span>
+<span>  refresh <span class="op">=</span> <span class="cn">FALSE</span></span>
+<span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div id="arguments">
     <h2>Arguments</h2>
     <dl><dt>series</dt>
 <dd><p>A vector of series identifiers</p></dd>
+
+
 <dt>start_date</dt>
 <dd><p>(Optional) Start date for time series</p></dd>
+
+
 <dt>end_date</dt>
 <dd><p>(Optional) End date for time series</p></dd>
+
+
 <dt>recent</dt>
 <dd><p>(Optional) Only retrieve most recent <code>recent</code> number of data points</p></dd>
+
+
 <dt>recent_weeks</dt>
 <dd><p>(Optional) Only retrieve data for most recent <code>recent_weeks</code> weeks</p></dd>
+
+
 <dt>recent_months</dt>
 <dd><p>(Optional) Only retrieve data for most recent <code>recent_months</code> months</p></dd>
+
+
 <dt>recent_years</dt>
 <dd><p>(Optional) Only retrieve data for most recent <code>recent_years</code> years</p></dd>
+
+
 <dt>quiet</dt>
 <dd><p>(Optional) Don't emit messages or warnings if <code>TRUE</code>, default is <code>FALSE</code></p></dd>
+
+
 <dt>refresh</dt>
 <dd><p>(Optional) Refresh currently cached series if <code>TRUE</code>, default is <code>FALSE</code></p></dd>
+
 </dl></div>
     <div id="value">
     <h2>Value</h2>
-    <p>a tibble with series data</p>
+    
+
+<p>a tibble with series data</p>
     </div>
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co"># \donttest{</span></span>
-<span class="r-in"><span class="va">series_data</span> <span class="op">&lt;-</span> <span class="fu">get_boc_series</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"IEXE1001.CL"</span>, <span class="st">"IEXE4702"</span><span class="op">)</span><span class="op">)</span></span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> Downloading BOC series data for IEXE1001.CL</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> Downloading BOC series data for IEXE4702</span>
-<span class="r-in"><span class="co"># }</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co"># \donttest{</span></span></span>
+<span class="r-in"><span><span class="va">series_data</span> <span class="op">&lt;-</span> <span class="fu">get_boc_series</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"IEXE1001.CL"</span>, <span class="st">"IEXE4702"</span><span class="op">)</span><span class="op">)</span></span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Accessing BOC series data from cache...</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Accessing BOC series data from cache...</span>
+<span class="r-in"><span><span class="co"># }</span></span></span>
 </code></pre></div>
     </div>
   </div>
@@ -120,7 +139,7 @@
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.3.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
 </div>
 
       </footer></div>
